@@ -2,6 +2,7 @@ import {
   Link,
   Links,
   Meta,
+  NavLink,
   Outlet,
   Scripts,
   ScrollRestoration,
@@ -42,10 +43,11 @@ export default function App() {
           </Navbar.Brand>
           <Navbar.Toggle/>
           <Navbar.Collapse>
-            <Navbar.Link as={Link} to="#">Home</Navbar.Link>
-            <Navbar.Link as={Link} to="products">Product</Navbar.Link>
+            <Navbar.Link as={NavLink} to="">Home</Navbar.Link>
+            <Navbar.Link as={NavLink} to="products">Products</Navbar.Link>
           </Navbar.Collapse>
         </Navbar>
+        <br/>
         <Outlet />
         <DarkThemeToggle className="fixed bottom-0 left-0"/>
       </Flowbite>
